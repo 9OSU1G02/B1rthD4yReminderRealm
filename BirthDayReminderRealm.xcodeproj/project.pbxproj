@@ -3,27 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B6F3ADF125905A9500D2DD27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3ADF025905A9500D2DD27 /* AppDelegate.swift */; };
 		B6F3ADF325905A9500D2DD27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3ADF225905A9500D2DD27 /* SceneDelegate.swift */; };
 		B6F3ADF525905A9500D2DD27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3ADF425905A9500D2DD27 /* ViewController.swift */; };
-		B6F3ADF825905A9500D2DD27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F3ADF625905A9500D2DD27 /* Main.storyboard */; };
 		B6F3ADFA25905A9700D2DD27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F3ADF925905A9700D2DD27 /* Assets.xcassets */; };
 		B6F3ADFD25905A9700D2DD27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F3ADFB25905A9700D2DD27 /* LaunchScreen.storyboard */; };
+		B6F3AE1225905C4B00D2DD27 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3AE0C25905C4B00D2DD27 /* ActionViewController.swift */; };
+		B6F3AE1325905C4B00D2DD27 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3AE0D25905C4B00D2DD27 /* PersonViewController.swift */; };
+		B6F3AE1425905C4B00D2DD27 /* BirthDayToDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3AE0E25905C4B00D2DD27 /* BirthDayToDayViewController.swift */; };
+		B6F3AE1525905C4B00D2DD27 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3AE0F25905C4B00D2DD27 /* PeopleViewController.swift */; };
+		B6F3AE1625905C4B00D2DD27 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3AE1025905C4B00D2DD27 /* PersonTableViewCell.swift */; };
+		B6F3AE1725905C4B00D2DD27 /* BirthDayToDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3AE1125905C4B00D2DD27 /* BirthDayToDayTableViewCell.swift */; };
+		B6F3AE1F25905C5900D2DD27 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3AE1A25905C5900D2DD27 /* Constant.swift */; };
+		B6F3AE2025905C5900D2DD27 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3AE1B25905C5900D2DD27 /* Extension.swift */; };
+		B6F3AE2125905C5900D2DD27 /* GlobalFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3AE1C25905C5900D2DD27 /* GlobalFunction.swift */; };
+		B6F3AE2225905C5900D2DD27 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3AE1E25905C5900D2DD27 /* CustomTextField.swift */; };
+		B6F3AE2525905C6900D2DD27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F3AE2425905C6900D2DD27 /* Main.storyboard */; };
+		B6F3AE2A25905D2C00D2DD27 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3AE2925905D2C00D2DD27 /* Person.swift */; };
+		B6F3AE2D25906D9F00D2DD27 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3AE2C25906D9E00D2DD27 /* RealmManager.swift */; };
+		C11DE0794D9CD48383CB6F38 /* Pods_BirthDayReminderRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626C20F843874CE8F02B1054 /* Pods_BirthDayReminderRealm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F680C622C3189AD9EC62DE8 /* Pods-BirthDayReminderRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthDayReminderRealm.debug.xcconfig"; path = "Target Support Files/Pods-BirthDayReminderRealm/Pods-BirthDayReminderRealm.debug.xcconfig"; sourceTree = "<group>"; };
+		626C20F843874CE8F02B1054 /* Pods_BirthDayReminderRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BirthDayReminderRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FB08735230C74D2FA09621 /* Pods-BirthDayReminderRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthDayReminderRealm.release.xcconfig"; path = "Target Support Files/Pods-BirthDayReminderRealm/Pods-BirthDayReminderRealm.release.xcconfig"; sourceTree = "<group>"; };
 		B6F3ADED25905A9500D2DD27 /* BirthDayReminderRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthDayReminderRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F3ADF025905A9500D2DD27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F3ADF225905A9500D2DD27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B6F3ADF425905A9500D2DD27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B6F3ADF725905A9500D2DD27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6F3ADF925905A9700D2DD27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6F3ADFC25905A9700D2DD27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6F3ADFE25905A9700D2DD27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6F3AE0C25905C4B00D2DD27 /* ActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		B6F3AE0D25905C4B00D2DD27 /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		B6F3AE0E25905C4B00D2DD27 /* BirthDayToDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthDayToDayViewController.swift; sourceTree = "<group>"; };
+		B6F3AE0F25905C4B00D2DD27 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		B6F3AE1025905C4B00D2DD27 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		B6F3AE1125905C4B00D2DD27 /* BirthDayToDayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthDayToDayTableViewCell.swift; sourceTree = "<group>"; };
+		B6F3AE1A25905C5900D2DD27 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B6F3AE1B25905C5900D2DD27 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		B6F3AE1C25905C5900D2DD27 /* GlobalFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunction.swift; sourceTree = "<group>"; };
+		B6F3AE1E25905C5900D2DD27 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B6F3AE2425905C6900D2DD27 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B6F3AE2925905D2C00D2DD27 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B6F3AE2C25906D9E00D2DD27 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +59,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11DE0794D9CD48383CB6F38 /* Pods_BirthDayReminderRealm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BD8BA4E6A550F045113342F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F680C622C3189AD9EC62DE8 /* Pods-BirthDayReminderRealm.debug.xcconfig */,
+				84FB08735230C74D2FA09621 /* Pods-BirthDayReminderRealm.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		624BCD07E4D7933F7ADBA90B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				626C20F843874CE8F02B1054 /* Pods_BirthDayReminderRealm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6F3ADE425905A9500D2DD27 = {
 			isa = PBXGroup;
 			children = (
 				B6F3ADEF25905A9500D2DD27 /* BirthDayReminderRealm */,
 				B6F3ADEE25905A9500D2DD27 /* Products */,
+				5BD8BA4E6A550F045113342F /* Pods */,
+				624BCD07E4D7933F7ADBA90B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +104,59 @@
 		B6F3ADEF25905A9500D2DD27 /* BirthDayReminderRealm */ = {
 			isa = PBXGroup;
 			children = (
+				B6F3AE2825905D1800D2DD27 /* Models */,
 				B6F3ADF025905A9500D2DD27 /* AppDelegate.swift */,
 				B6F3ADF225905A9500D2DD27 /* SceneDelegate.swift */,
 				B6F3ADF425905A9500D2DD27 /* ViewController.swift */,
-				B6F3ADF625905A9500D2DD27 /* Main.storyboard */,
+				B6F3AE1925905C5900D2DD27 /* Utility */,
+				B6F3AE1D25905C5900D2DD27 /* Views */,
+				B6F3AE0B25905C4B00D2DD27 /* Controllers */,
+				B6F3AE2425905C6900D2DD27 /* Main.storyboard */,
 				B6F3ADF925905A9700D2DD27 /* Assets.xcassets */,
 				B6F3ADFB25905A9700D2DD27 /* LaunchScreen.storyboard */,
 				B6F3ADFE25905A9700D2DD27 /* Info.plist */,
+				B6F3AE2C25906D9E00D2DD27 /* RealmManager.swift */,
 			);
 			path = BirthDayReminderRealm;
+			sourceTree = "<group>";
+		};
+		B6F3AE0B25905C4B00D2DD27 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3AE0C25905C4B00D2DD27 /* ActionViewController.swift */,
+				B6F3AE0D25905C4B00D2DD27 /* PersonViewController.swift */,
+				B6F3AE0E25905C4B00D2DD27 /* BirthDayToDayViewController.swift */,
+				B6F3AE0F25905C4B00D2DD27 /* PeopleViewController.swift */,
+				B6F3AE1025905C4B00D2DD27 /* PersonTableViewCell.swift */,
+				B6F3AE1125905C4B00D2DD27 /* BirthDayToDayTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B6F3AE1925905C5900D2DD27 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3AE1A25905C5900D2DD27 /* Constant.swift */,
+				B6F3AE1B25905C5900D2DD27 /* Extension.swift */,
+				B6F3AE1C25905C5900D2DD27 /* GlobalFunction.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B6F3AE1D25905C5900D2DD27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3AE1E25905C5900D2DD27 /* CustomTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6F3AE2825905D1800D2DD27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3AE2925905D2C00D2DD27 /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6F3AE0125905A9700D2DD27 /* Build configuration list for PBXNativeTarget "BirthDayReminderRealm" */;
 			buildPhases = (
+				F86BE6EFF54B9B2C71251AB5 /* [CP] Check Pods Manifest.lock */,
 				B6F3ADE925905A9500D2DD27 /* Sources */,
 				B6F3ADEA25905A9500D2DD27 /* Frameworks */,
 				B6F3ADEB25905A9500D2DD27 /* Resources */,
+				9B067453A6C0496A53C2929D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,34 +220,80 @@
 			files = (
 				B6F3ADFD25905A9700D2DD27 /* LaunchScreen.storyboard in Resources */,
 				B6F3ADFA25905A9700D2DD27 /* Assets.xcassets in Resources */,
-				B6F3ADF825905A9500D2DD27 /* Main.storyboard in Resources */,
+				B6F3AE2525905C6900D2DD27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B067453A6C0496A53C2929D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BirthDayReminderRealm/Pods-BirthDayReminderRealm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BirthDayReminderRealm/Pods-BirthDayReminderRealm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BirthDayReminderRealm/Pods-BirthDayReminderRealm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F86BE6EFF54B9B2C71251AB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BirthDayReminderRealm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6F3ADE925905A9500D2DD27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6F3AE2225905C5900D2DD27 /* CustomTextField.swift in Sources */,
+				B6F3AE1325905C4B00D2DD27 /* PersonViewController.swift in Sources */,
+				B6F3AE2D25906D9F00D2DD27 /* RealmManager.swift in Sources */,
+				B6F3AE1525905C4B00D2DD27 /* PeopleViewController.swift in Sources */,
 				B6F3ADF525905A9500D2DD27 /* ViewController.swift in Sources */,
+				B6F3AE2A25905D2C00D2DD27 /* Person.swift in Sources */,
 				B6F3ADF125905A9500D2DD27 /* AppDelegate.swift in Sources */,
+				B6F3AE2025905C5900D2DD27 /* Extension.swift in Sources */,
+				B6F3AE1725905C4B00D2DD27 /* BirthDayToDayTableViewCell.swift in Sources */,
+				B6F3AE1225905C4B00D2DD27 /* ActionViewController.swift in Sources */,
 				B6F3ADF325905A9500D2DD27 /* SceneDelegate.swift in Sources */,
+				B6F3AE1F25905C5900D2DD27 /* Constant.swift in Sources */,
+				B6F3AE1625905C4B00D2DD27 /* PersonTableViewCell.swift in Sources */,
+				B6F3AE2125905C5900D2DD27 /* GlobalFunction.swift in Sources */,
+				B6F3AE1425905C4B00D2DD27 /* BirthDayToDayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B6F3ADF625905A9500D2DD27 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6F3ADF725905A9500D2DD27 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B6F3ADFB25905A9700D2DD27 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +423,7 @@
 		};
 		B6F3AE0225905A9700D2DD27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F680C622C3189AD9EC62DE8 /* Pods-BirthDayReminderRealm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +437,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.huyquocnguyen1902.BirthDayReminderRealm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B6F3AE0325905A9700D2DD27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84FB08735230C74D2FA09621 /* Pods-BirthDayReminderRealm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.huyquocnguyen1902.BirthDayReminderRealm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

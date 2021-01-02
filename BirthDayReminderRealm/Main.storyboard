@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObQ-Ot-WnW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Birthday Today-->
+        <scene sceneID="XEd-BM-RgT">
+            <objects>
+                <viewController id="EeY-8K-DHu" customClass="BirthDayToDayViewController" customModule="BirthDayReminderRealm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aEz-HR-IJR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rhe-T1-ehR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="80" id="d6s-CU-sd7" customClass="BirthDayToDayTableViewCell" customModule="BirthDayReminderRealm" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d6s-CU-sd7" id="2pP-W4-ZmO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ggU-o0-xOo">
+                                                    <rect key="frame" x="125" y="11" width="164" height="58"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyen Quoc Huy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3k-va-7OD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="164" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 19-02-2000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZD-Hl-HRO">
+                                                            <rect key="frame" x="38" y="40" width="88.5" height="18"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Ndp-p2-W4R">
+                                                    <rect key="frame" x="20" y="10" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="ADG-Uy-UnC"/>
+                                                        <constraint firstAttribute="height" constant="60" id="TWQ-IR-IjZ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaR-hU-MjN">
+                                                    <rect key="frame" x="345" y="22" width="34" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RaR-hU-MjN" firstAttribute="centerY" secondItem="2pP-W4-ZmO" secondAttribute="centerY" id="1FL-ik-ohn"/>
+                                                <constraint firstItem="ggU-o0-xOo" firstAttribute="centerX" secondItem="2pP-W4-ZmO" secondAttribute="centerX" id="2nV-y0-W4K"/>
+                                                <constraint firstItem="ggU-o0-xOo" firstAttribute="centerY" secondItem="2pP-W4-ZmO" secondAttribute="centerY" id="WJE-kZ-P4v"/>
+                                                <constraint firstItem="Ndp-p2-W4R" firstAttribute="centerY" secondItem="2pP-W4-ZmO" secondAttribute="centerY" id="Y7g-4F-qg5"/>
+                                                <constraint firstItem="Ndp-p2-W4R" firstAttribute="leading" secondItem="2pP-W4-ZmO" secondAttribute="leading" constant="20" symbolic="YES" id="pfj-w6-gaB"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="RaR-hU-MjN" secondAttribute="trailing" constant="15" id="x6t-hy-YIz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="avatarImageView" destination="Ndp-p2-W4R" id="FpI-1c-1qw"/>
+                                            <outlet property="dobLabel" destination="rZD-Hl-HRO" id="zF3-Tz-i0s"/>
+                                            <outlet property="isTodayBirthdayLabel" destination="RaR-hU-MjN" id="3I3-7d-dkd"/>
+                                            <outlet property="nameLabel" destination="P3k-va-7OD" id="vaC-Fh-NgZ"/>
+                                            <segue destination="Uok-vs-FTP" kind="show" destinationCreationSelector="showActionView:" id="L2l-jk-o9C"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jfA-x1-GlT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rhe-T1-ehR" firstAttribute="trailing" secondItem="jfA-x1-GlT" secondAttribute="trailing" id="6ay-Ir-i0w"/>
+                            <constraint firstItem="rhe-T1-ehR" firstAttribute="top" secondItem="jfA-x1-GlT" secondAttribute="top" id="JKc-6n-cqS"/>
+                            <constraint firstItem="rhe-T1-ehR" firstAttribute="leading" secondItem="jfA-x1-GlT" secondAttribute="leading" id="WT1-DN-FBi"/>
+                            <constraint firstItem="rhe-T1-ehR" firstAttribute="bottom" secondItem="jfA-x1-GlT" secondAttribute="bottom" id="lqt-C9-rOz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Birthday Today" image="heart" catalog="system" selectedImage="heart" id="sT5-sC-EEK"/>
+                    <connections>
+                        <outlet property="birthDayTodayTableView" destination="rhe-T1-ehR" id="B9R-5y-q7O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pab-0P-SYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714.49275362318849" y="75.669642857142847"/>
+        </scene>
+        <!--Action View Controller-->
+        <scene sceneID="hIV-Rz-t0X">
+            <objects>
+                <viewController id="Uok-vs-FTP" customClass="ActionViewController" customModule="BirthDayReminderRealm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IBd-LL-pJ9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Dez-kS-FGU">
+                                <rect key="frame" x="82" y="60" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="mZP-zR-WXD"/>
+                                    <constraint firstAttribute="height" constant="250" id="wD7-UM-KC7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say something to congratulate Nguyen Quoc Huy 20th birthday" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xe-Wv-41q">
+                                <rect key="frame" x="0.0" y="400" width="414" height="42.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="W7O-FM-UN5">
+                                <rect key="frame" x="156.5" y="482.5" width="101" height="136"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syR-fX-hEV">
+                                        <rect key="frame" x="12.5" y="0.0" width="76" height="30"/>
+                                        <state key="normal" title="Send Email">
+                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendEmailPressed:" destination="Uok-vs-FTP" eventType="touchUpInside" id="loj-I3-oaa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfR-OO-N47">
+                                        <rect key="frame" x="0.0" y="53" width="101" height="30"/>
+                                        <state key="normal" title="Send Message">
+                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendMessagePressed:" destination="Uok-vs-FTP" eventType="touchUpInside" id="1Z0-Ig-3Pg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLz-A0-Efx">
+                                        <rect key="frame" x="35.5" y="106" width="30" height="30"/>
+                                        <state key="normal" title="Call">
+                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="callPressed:" destination="Uok-vs-FTP" eventType="touchUpInside" id="hTN-uK-3bp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H37-Cs-vb4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W7O-FM-UN5" firstAttribute="top" secondItem="4xe-Wv-41q" secondAttribute="bottom" constant="40" id="AEY-gZ-BBL"/>
+                            <constraint firstItem="W7O-FM-UN5" firstAttribute="centerX" secondItem="IBd-LL-pJ9" secondAttribute="centerX" id="Dx6-sE-CQj"/>
+                            <constraint firstItem="4xe-Wv-41q" firstAttribute="centerX" secondItem="IBd-LL-pJ9" secondAttribute="centerX" id="Tpp-6M-Twr"/>
+                            <constraint firstItem="4xe-Wv-41q" firstAttribute="leading" secondItem="IBd-LL-pJ9" secondAttribute="leading" id="W0F-Bd-Ldp"/>
+                            <constraint firstItem="4xe-Wv-41q" firstAttribute="centerY" secondItem="IBd-LL-pJ9" secondAttribute="centerY" id="cqE-8x-Bsz"/>
+                            <constraint firstAttribute="trailing" secondItem="4xe-Wv-41q" secondAttribute="trailing" id="ecy-dL-UbP"/>
+                            <constraint firstItem="Dez-kS-FGU" firstAttribute="centerX" secondItem="IBd-LL-pJ9" secondAttribute="centerX" id="qZu-XM-aYg"/>
+                            <constraint firstItem="Dez-kS-FGU" firstAttribute="top" secondItem="H37-Cs-vb4" secondAttribute="top" constant="60" id="vk4-Dt-gGK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0lc-XB-R9Q"/>
+                    <connections>
+                        <outlet property="avatarImageView" destination="Dez-kS-FGU" id="AR2-nM-4zI"/>
+                        <outlet property="birthdayText" destination="4xe-Wv-41q" id="beJ-Zr-FbQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFW-bm-cNR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1595.6521739130435" y="75.669642857142847"/>
+        </scene>
+        <!--People View Controller-->
+        <scene sceneID="pU2-ZE-lSf">
+            <objects>
+                <viewController id="tFI-pE-FIB" customClass="PeopleViewController" customModule="BirthDayReminderRealm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uzW-o6-LNk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PM1-Vp-Cfi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="80" id="nMz-qs-II6" customClass="PersonTableViewCell" customModule="BirthDayReminderRealm" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nMz-qs-II6" id="L2f-tL-L14">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nI9-xp-wI5">
+                                                    <rect key="frame" x="125" y="11" width="164" height="58"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyen Quoc Huy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r97-91-qrt">
+                                                            <rect key="frame" x="0.0" y="0.0" width="164" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 19-02-2000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xo-7P-DuB">
+                                                            <rect key="frame" x="38" y="40" width="88.5" height="18"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="u4x-SX-oL4">
+                                                    <rect key="frame" x="20" y="10" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="4aG-DZ-xtU"/>
+                                                        <constraint firstAttribute="height" constant="60" id="bWD-kL-VaU"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGF-aW-7r4">
+                                                    <rect key="frame" x="345" y="22" width="34" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="BGF-aW-7r4" secondAttribute="trailing" constant="15" id="AkR-XF-XDW"/>
+                                                <constraint firstItem="BGF-aW-7r4" firstAttribute="centerY" secondItem="L2f-tL-L14" secondAttribute="centerY" id="PdA-op-obY"/>
+                                                <constraint firstItem="u4x-SX-oL4" firstAttribute="centerY" secondItem="L2f-tL-L14" secondAttribute="centerY" id="fGR-vI-IBJ"/>
+                                                <constraint firstItem="u4x-SX-oL4" firstAttribute="leading" secondItem="L2f-tL-L14" secondAttribute="leading" constant="20" symbolic="YES" id="quK-jy-xbR"/>
+                                                <constraint firstItem="nI9-xp-wI5" firstAttribute="centerX" secondItem="L2f-tL-L14" secondAttribute="centerX" id="rfM-xW-fUe"/>
+                                                <constraint firstItem="nI9-xp-wI5" firstAttribute="centerY" secondItem="L2f-tL-L14" secondAttribute="centerY" id="xeO-kn-fld"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="avatarImageView" destination="u4x-SX-oL4" id="GuF-CQ-6WT"/>
+                                            <outlet property="dobLabel" destination="8xo-7P-DuB" id="Dhh-zK-253"/>
+                                            <outlet property="isTodayBirthdayLabel" destination="BGF-aW-7r4" id="vgk-dz-RL7"/>
+                                            <outlet property="nameLabel" destination="r97-91-qrt" id="Kpy-t2-bCN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L4B-wX-9W6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PM1-Vp-Cfi" firstAttribute="bottom" secondItem="L4B-wX-9W6" secondAttribute="bottom" id="Fo3-nH-oH9"/>
+                            <constraint firstItem="PM1-Vp-Cfi" firstAttribute="trailing" secondItem="L4B-wX-9W6" secondAttribute="trailing" id="arb-HA-6os"/>
+                            <constraint firstItem="PM1-Vp-Cfi" firstAttribute="leading" secondItem="L4B-wX-9W6" secondAttribute="leading" id="bWP-BK-OV1"/>
+                            <constraint firstItem="PM1-Vp-Cfi" firstAttribute="top" secondItem="L4B-wX-9W6" secondAttribute="top" id="vhc-Rm-DtI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2BZ-07-enw">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="person.badge.plus" catalog="system" id="m99-1v-PbZ">
+                            <connections>
+                                <segue destination="4Ta-s7-dEU" kind="show" id="tlt-uc-BG9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="peopleTableView" destination="PM1-Vp-Cfi" id="odq-9Z-nQE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YUU-C1-Ji9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1627.536231884058" y="-626.11607142857144"/>
+        </scene>
+        <!--Person View Controller-->
+        <scene sceneID="Ocq-gz-1l5">
+            <objects>
+                <viewController storyboardIdentifier="personVC" id="4Ta-s7-dEU" customClass="PersonViewController" customModule="BirthDayReminderRealm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wME-TM-UXn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DCD-Mg-o5x">
+                                <rect key="frame" x="47" y="128" width="320" height="597"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Xux-QH-BoL">
+                                        <rect key="frame" x="45" y="0.0" width="230" height="230"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="gjf-Sn-DT7"/>
+                                            <constraint firstAttribute="height" constant="230" id="yTc-eF-Xh3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFY-t3-Qsa">
+                                        <rect key="frame" x="92.5" y="250" width="135" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <state key="normal" title="Change Avatar">
+                                            <color key="titleColor" systemColor="systemPinkColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeAvatarButtonPressed:" destination="4Ta-s7-dEU" eventType="touchUpInside" id="6ay-Pw-D0E"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="L06-JA-uxQ">
+                                        <rect key="frame" x="0.0" y="306" width="320" height="291"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MlM-Dd-xoI" customClass="CustomTextField" customModule="BirthDayReminderRealm" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="320" id="ofK-pO-AJy"/>
+                                                    <constraint firstAttribute="height" constant="50" id="sUV-1I-mzo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Day of Birth" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gli-Ud-fi8" customClass="CustomTextField" customModule="BirthDayReminderRealm" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="65" width="320" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="CX7-iU-jSj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qE3-45-6mL" customClass="CustomTextField" customModule="BirthDayReminderRealm" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="130" width="320" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="JwV-8V-1ce"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jo1-o1-LGW" customClass="CustomTextField" customModule="BirthDayReminderRealm" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="195" width="320" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="w9Z-zW-Qbe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad" returnKeyType="done" smartInsertDeleteType="no"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="I8b-di-8yW">
+                                                <rect key="frame" x="0.0" y="260" width="320" height="31"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Notifacation 1" translatesAutoresizingMaskIntoConstraints="NO" id="4Pj-9t-Bks">
+                                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="31"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYE-RX-ud3">
+                                                        <rect key="frame" x="58.5" y="0.0" width="179" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KXU-dd-4rX">
+                                                        <rect key="frame" x="232.5" y="0.0" width="89.5" height="31"/>
+                                                        <color key="onTintColor" systemColor="systemRedColor"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PiP-DW-UPC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="DCD-Mg-o5x" firstAttribute="top" secondItem="PiP-DW-UPC" secondAttribute="top" constant="40" id="GCR-eE-jHZ"/>
+                            <constraint firstItem="DCD-Mg-o5x" firstAttribute="centerX" secondItem="wME-TM-UXn" secondAttribute="centerX" id="fx0-RF-UxP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="p9G-54-C5v">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="lxe-zN-AW4">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="4Ta-s7-dEU" id="ijW-wx-O61"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="avatarImageView" destination="Xux-QH-BoL" id="Pbw-3F-tze"/>
+                        <outlet property="birthDayTextField" destination="Gli-Ud-fi8" id="j3o-sY-2uf"/>
+                        <outlet property="emailTextField" destination="qE3-45-6mL" id="XNb-qg-jav"/>
+                        <outlet property="nameTextField" destination="MlM-Dd-xoI" id="pGg-C8-wVq"/>
+                        <outlet property="notificationSwitch" destination="KXU-dd-4rX" id="xtl-hv-H2b"/>
+                        <outlet property="phoneNumberTextField" destination="Jo1-o1-LGW" id="e3K-LM-0ij"/>
+                        <outletCollection property="textFieldCollection" destination="MlM-Dd-xoI" collectionClass="NSMutableArray" id="DAE-LC-ibg"/>
+                        <outletCollection property="textFieldCollection" destination="Gli-Ud-fi8" collectionClass="NSMutableArray" id="z4p-Oy-llA"/>
+                        <outletCollection property="textFieldCollection" destination="qE3-45-6mL" collectionClass="NSMutableArray" id="fiS-v8-AP4"/>
+                        <outletCollection property="textFieldCollection" destination="Jo1-o1-LGW" collectionClass="NSMutableArray" id="TjK-77-ODN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BN2-yL-a4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2653.6231884057975" y="-626.11607142857144"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ve7-O0-T3t">
+            <objects>
+                <tabBarController id="ObQ-Ot-WnW" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bW-ow-IeP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                        <color key="selectedImageTintColor" systemColor="systemPinkColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="w7d-CY-pee" kind="relationship" relationship="viewControllers" id="gto-7b-Oka"/>
+                        <segue destination="EeY-8K-DHu" kind="relationship" relationship="viewControllers" id="YG5-0L-cTv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qe0-A7-I5x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170" y="-322"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="wis-El-0KH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w7d-CY-pee" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="People" image="person.3" catalog="system" id="x4O-bh-6hS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9TC-tb-sHO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tFI-pE-FIB" kind="relationship" relationship="rootViewController" id="iEi-CQ-Zmn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAl-Wj-8H4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717.39130434782612" y="-626.11607142857144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Notifacation 1" width="32" height="35"/>
+        <image name="avatar" width="184" height="184"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
+        <image name="person.badge.plus" catalog="system" width="128" height="124"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
